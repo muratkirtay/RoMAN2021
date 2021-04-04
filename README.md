@@ -2,3 +2,13 @@
 A repository for reproducing the results presented in RoMAN-2021 submission.
 
 > **Abstract:** This paper presents a trust-based affective computational account of scaffolding in robot-robot interactions to perform sequential visual recalling.  To implement the trust model, we endow the Pepper humanoid robot with two cognitive modules: auto-associative memory and internal reward.  The former module enables the Pepper robot to extract the cost (i.e., cognitive load) of visual perceptual processing that yields high-level emotions (such as well-being).  The later module employs the cost values to extract internal reward value for the robot while performing a cost-aware interactive reinforcement learning (RL) task with online instructors that have different guiding strategies: reliable, less-reliable, and random. These cognitive modules allow the Pepper robot to select a trustworthy instructor, in case of a free choice, at the end of experiments based on the average cumulative reward. After determining the trustworthy instructor, the Pepper robot is assigned to be a caregiver robot to guide a perceptually limited infant robot (i.e., the Nao robot) that performs the same task. In the scaffolding setting, we also equip the Pepper robot with a theory of mind module that forms state-action-reward associations of the infant robot through observing the infant robot's decision-making behavior. Overall, the results indicate that the Pepper robot as a caregiver agent leverages the decision-making policies -- obtained by interacting with the trustworthy instructor-- to guide the infant robot to perform the same task efficiently.
+
+## Folder and file descriptions
++ **Assets:** this folder contains various assets to create the scene for visual processing, visual patterns to train associative memory, etc.  
++ **Source:** the source files to run the experiments, preprocess assets, postprocess the data, and visualize the results. 
++ **Data:** this contains subfolders for the results in .pkl format. Check visualization in the **Source folder** to obtain the result for the various runs. Note that base folder refers to the experimental results with caregiver agent that has no trust component and theory of mind module.
++ **Figures:** the subfolders host the figures generated for the article. Note that the scripts in Source/visualization folder can be employed to generate more figures 
+for different runs to depict q matrices, cumulative rewards, etc. 
++ **TheRobotTrustScaffolding.mp4:** A video file to show the experiment demo with the Pepper and Nao robots.  
++ **authorCopyTrustModel.pdf:**
++ **versions_py.txt:** a text file contains the version numbers of the python packages for running the scripts.
